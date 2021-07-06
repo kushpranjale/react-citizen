@@ -5,7 +5,7 @@ import { Story } from "@storybook/react";
  * URL to the component design
  */
 const figmaURL =
-  "https://www.figma.com/file/dsuWBjMOUD1ek4l1shHyBM/LOCAL-ON-BOARDING-COMPONENTS?node-id=671%3A412";
+  "https://www.figma.com/file/dsuWBjMOUD1ek4l1shHyBM/LOCAL-ON-BOARDING-COMPONENTS?node-id=819%3A1010";
 
 /**
  * Storybook component configuration
