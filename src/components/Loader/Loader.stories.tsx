@@ -21,7 +21,7 @@ export default {
   },
   argTypes: {
     children: {
-      options: ["Content"],
+      options: ["Content","Text"],
       defaultValue: "Content",
       mapping: {
         Content: "✅ Loaded",

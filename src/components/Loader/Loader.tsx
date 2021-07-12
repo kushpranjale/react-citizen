@@ -19,11 +19,22 @@ export interface LoaderProps {
 /**
  * List of styles to apply to the component
  */
-const styles = classNames();
+const styles = classNames(
+ "h-10",
+ "w-10",
+);
 
 /**
  * Loader component
  */
-export const Loader: FunctionComponent<LoaderProps> = () => (
-  <div className={styles}></div>
+export const Loader: FunctionComponent<LoaderProps> = (
+  {
+    isLoading,
+    children
+  }
+) => (
+  <div className={styles}>
+  { !isLoading ?  <img src={require('../../assets/loader.svg')} />:
+  <div>{children}</div>}
+  </div>
 );
