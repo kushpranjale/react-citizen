@@ -21,10 +21,14 @@ export default {
     },
   },
   argTypes: {
+    color: {
+      defaultValue: "primary",
+    },
     children: {
       options: ["Empty", "Text", "Icon", "IconWithText"],
-      defaultValue: "Empty",
+      defaultValue: "Text",
       mapping: {
+        Empty: "",
         Text: "👇 Click Me!",
         Icon: <Icon family={IconFamily.Shield} />,
         IconWithText: (

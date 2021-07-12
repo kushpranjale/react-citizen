@@ -1,0 +1,104 @@
+/**
+* Button.css
+**/
+@layer components {
+  .btn {
+    @apply text-lg;
+    @apply py-5 px-8 font-bold rounded-lg shadow-md;
+  }
+
+  .btn-primary {
+    @apply bg-primary-500 hover:bg-primary-600;
+    @apply border-primary-500 hover:border-primary-600;
+    @apply text-primary-50 hover:text-primary-50;
+
+    &.btn--hollow {
+      @apply text-primary-500 hover:text-primary-600;
+    }
+  }
+
+  .btn-secondary {
+    @apply bg-secondary-700 hover:bg-secondary-800;
+    @apply border-secondary-700 hover:border-secondary-800;
+    @apply text-secondary-50 hover:text-secondary-50;
+
+    &.btn--hollow {
+      @apply text-secondary-700 hover:text-secondary-800;
+    }
+  }
+
+  .btn-ternary {
+    @apply bg-ternary-300 hover:bg-ternary-400;
+    @apply border-ternary-300 hover:border-ternary-400;
+    @apply text-ternary-50 hover:text-ternary-50;
+
+    &.btn--hollow {
+      @apply text-ternary-300 hover:text-ternary-400;
+    }
+  }
+
+  .btn-positive {
+    @apply bg-positive-400 hover:bg-positive-500;
+    @apply border-positive-400 hover:border-positive-500;
+    @apply text-positive-50 hover:text-positive-50;
+
+    &.btn--hollow {
+      @apply text-positive-400 hover:text-positive-500;
+    }
+  }
+
+  .btn-negative {
+    @apply bg-negative-400 hover:bg-negative-500;
+    @apply border-negative-400 hover:border-negative-500;
+    @apply text-negative-50 hover:text-negative-50;
+
+    &.btn--hollow {
+      @apply text-negative-400 hover:text-negative-500;
+    }
+  }
+
+  .btn-medium {
+    @apply bg-monochrome-500 hover:bg-monochrome-600;
+    @apply border-monochrome-500 hover:border-monochrome-600;
+    @apply text-monochrome-50 hover:text-monochrome-50;
+
+    &.btn--hollow {
+      @apply text-monochrome-500 hover:text-monochrome-600;
+    }
+  }
+
+  .btn-dark {
+    @apply bg-monochrome-600 hover:bg-monochrome-700;
+    @apply border-monochrome-600 hover:border-monochrome-700;
+    @apply text-monochrome-50 hover:text-monochrome-50;
+
+    &.btn--hollow {
+      @apply text-monochrome-600 hover:text-monochrome-700;
+    }
+  }
+
+  .btn-light {
+    @apply bg-monochrome-400 hover:bg-monochrome-500;
+    @apply border-monochrome-400 hover:border-monochrome-500;
+    @apply text-monochrome-50 hover:text-monochrome-50;
+
+    &.btn--hollow {
+      @apply text-monochrome-400 hover:text-monochrome-500;
+    }
+  }
+
+  .btn-lighter {
+    @apply bg-monochrome-300 hover:bg-monochrome-400;
+    @apply border-monochrome-300 hover:border-monochrome-400;
+    @apply text-monochrome-50 hover:text-monochrome-50;
+
+    &.btn--hollow {
+      @apply text-monochrome-300 hover:text-monochrome-400;
+    }
+  }
+
+  .btn--hollow {
+    @apply border-2;
+    @apply bg-transparent hover:bg-transparent;
+  }
+}

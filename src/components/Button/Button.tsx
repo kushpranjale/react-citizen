@@ -1,4 +1,5 @@
 import { Color } from "../../tokens/Colorimetry";
+import "./Button.css";
 
 import classNames from "classnames";
 import { FunctionComponent } from "react";
@@ -29,15 +30,27 @@ export interface ButtonProps {
 }
 
 /**
- * List of styles to apply to the component
- */
-const styles = classNames();
-
-/**
  * Button component
  */
-export const Button: FunctionComponent<ButtonProps> = () => (
-  <>
-    <button className={styles}></button>
-  </>
-);
+export const Button: FunctionComponent<ButtonProps> = ({
+  hollow,
+  color,
+  children,
+  onClick,
+}) => {
+  /**
+   * List of styles to apply to the component
+   */
+  const styles = classNames("btn", {
+    [`btn-${color}`]: color,
+    [`btn--hollow`]: hollow,
+  });
+
+  return (
+    <>
+      <button type="button" onClick={onClick} className={styles}>
+        {children}
+      </button>
+    </>
+  );
+};
